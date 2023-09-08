@@ -1,0 +1,17 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model Jadwal {
+  id         Int      @id @default(autoincrement())
+  hari       String   @db.VarChar(255)
+  waktu      String
+  mataKuliah String   @db.VarChar(255)
+  ruangan    String?
+  createdAt  DateTime @default(now())
+}
