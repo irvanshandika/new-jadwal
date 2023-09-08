@@ -37,4 +37,7 @@ export default defineConfig({
       { find: "@images", replacement: fileURLToPath(new URL("./src/images", import.meta.url)) },
     ],
   },
+  server: {
+    port: 3000
+  }
 });

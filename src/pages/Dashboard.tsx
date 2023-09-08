@@ -16,7 +16,7 @@ const Dashboard: React.FC = () => {
   const navigate = useNavigate();
   const { mutate } = useSWRConfig();
   const fetcher = async () => {
-    const response = await axios.get<Jadwal[]>("https://pemrograman.pages.dev/api/jadwal");
+    const response = await axios.get<Jadwal[]>("https://pemrograman.vercel.app/api/jadwal");
     return response.data;
   };
   const { data } = useSWR<Jadwal[]>("jadwal", fetcher);
@@ -31,7 +31,7 @@ const Dashboard: React.FC = () => {
   }
 
   const deleteJadwal = async (jadwalId: number) => {
-    await axios.delete(`https://pemrograman.pages.dev/api/jadwal/${jadwalId}`);
+    await axios.delete(`https://pemrograman.vercel.app/api/jadwal/${jadwalId}`);
     mutate("jadwal");
     navigate("/dashboard");
   };

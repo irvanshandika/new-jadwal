@@ -20,7 +20,7 @@ const EditJadwal: React.FC = () => {
   useEffect(() => {
     const getJadwalById = async () => {
       try {
-        const response = await axios.get<Jadwal>(`https://pemrograman.pages.dev/api/jadwal/${id}`);
+        const response = await axios.get<Jadwal>(`https://pemrograman.vercel.app/api/jadwal/${id}`);
         const jadwalData = response.data;
         setHari(jadwalData.hari);
         setWaktu(jadwalData.waktu);
@@ -36,7 +36,7 @@ const EditJadwal: React.FC = () => {
   const updateJadwal = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      await axios.patch(`https://pemrograman.pages.dev/api/jadwal/${id}`, {
+      await axios.patch(`https://pemrograman.vercel.app/api/jadwal/${id}`, {
         hari,
         waktu,
         mataKuliah,
