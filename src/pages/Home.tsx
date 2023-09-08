@@ -238,7 +238,7 @@ const Home: FC = () => {
         <div className="-m-1.5 overflow-x-auto">
           <div className="p-1.5 min-w-full inline-block align-middle">
             <div className="border rounded-lg divide-y divide-gray-200 dark:border-gray-700 dark:divide-gray-700">
-              <div className="py-3 px-4 bg-gray-200 dark:bg-gray-800">
+              <div className="py-3 px-4 bg-sky-200 dark:bg-gray-800">
                 <div className="relative max-w-xs">
                   <label htmlFor="hs-table-search" className="sr-only">
                     Search
@@ -261,45 +261,45 @@ const Home: FC = () => {
               </div>
               <div className="overflow-x-auto relative">
                 <table className="min-w-full divide-y divide-gray-200 dark:divide-gray-800">
-                  <thead className="bg-gray-50 dark:bg-gray-700">
+                  <thead className="bg-sky-200 dark:bg-gray-700">
                     <tr>
-                      <th scope="col" className="px-6 py-3 text-left text-xs text-gray-500 uppercase">
+                      <th scope="col" className="px-6 py-3 text-left text-xs text-black uppercase">
                         Hari
                       </th>
-                      <th scope="col" className="px-6 py-3 text-left text-xs text-gray-500 uppercase">
+                      <th scope="col" className="px-6 py-3 text-left text-xs text-black uppercase">
                         Waktu
                       </th>
-                      <th scope="col" className="px-6 py-3 text-left text-xs text-gray-500 uppercase">
+                      <th scope="col" className="px-6 py-3 text-left text-xs text-black uppercase">
                         Mata Kuliah
                       </th>
-                      <th scope="col" className="px-6 py-3 text-left text-xs text-gray-500 uppercase">
+                      <th scope="col" className="px-6 py-3 text-left text-xs text-black uppercase">
                         Jenis Kuliah
                       </th>
-                      <th scope="col" className="px-6 py-3 text-left text-xs text-gray-500 uppercase">
+                      <th scope="col" className="px-6 py-3 text-left text-xs text-black uppercase">
                         Ruangan
                       </th>
-                      <th scope="col" className="px-6 py-3 text-left text-xs text-gray-500 uppercase">
+                      <th scope="col" className="px-6 py-3 text-left text-xs text-black uppercase">
                         Kelas
                       </th>
-                      <th scope="col" className="px-6 py-3 text-left text-xs text-gray-500 uppercase">
+                      <th scope="col" className="px-6 py-3 text-left text-xs text-black uppercase">
                         Nama Dosen
                       </th>
-                      <th scope="col" className="px-6 py-3 text-left text-xs text-gray-500 uppercase">
+                      <th scope="col" className="px-6 py-3 text-left text-xs text-black uppercase">
                         Zoom URL
                       </th>
                     </tr>
                   </thead>
-                  <tbody className="divide-y divide-gray-200 dark:divide-gray-700 bg-gray-200 dark:bg-gray-800">
+                  <tbody className="divide-y divide-gray-200 dark:divide-gray-700 bg-sky-200 dark:bg-gray-800">
                     {filteredJadwal.map((jadwal) => (
                       <tr key={jadwal.IdKuliah}>
-                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">{jadwal.Hari}</td>
-                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">{jadwal.Waktu}</td>
-                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">{jadwal.MataKuliah}</td>
-                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">{jadwal.JenisKuliah}</td>
-                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">{jadwal.Ruang}</td>
-                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">{jadwal.Kelas}</td>
-                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">{jadwal.NamaDosen}</td>
-                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">
+                        <td className="px-6 py-4 whitespace-nowrap text-sm text-black dark:text-gray-200">{jadwal.Hari}</td>
+                        <td className="px-6 py-4 whitespace-nowrap text-sm text-black dark:text-gray-200">{jadwal.Waktu}</td>
+                        <td className="px-6 py-4 whitespace-nowrap text-sm text-black dark:text-gray-200">{jadwal.MataKuliah}</td>
+                        <td className="px-6 py-4 whitespace-nowrap text-sm text-black dark:text-gray-200">{jadwal.JenisKuliah}</td>
+                        <td className="px-6 py-4 whitespace-nowrap text-sm text-black dark:text-gray-200">{jadwal.Ruang}</td>
+                        <td className="px-6 py-4 whitespace-nowrap text-sm text-black dark:text-gray-200">{jadwal.Kelas}</td>
+                        <td className="px-6 py-4 whitespace-nowrap text-sm text-black dark:text-gray-200">{jadwal.NamaDosen}</td>
+                        <td className="px-6 py-4 whitespace-nowrap text-sm text-black dark:text-gray-200">
                           <a href={jadwal.ZoomURL}>
                             <button
                               data-tooltip-target="tooltip-camera"

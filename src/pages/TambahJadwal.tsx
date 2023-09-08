@@ -11,7 +11,7 @@ const TambahJadwal: React.FC = () => {
 
   const saveJadwal = async (e: FormEvent) => {
     e.preventDefault();
-    await axios.post("https://pemrograman.vercel.app/api/jadwal", {
+    await axios.post("https://pemrograman.pages.dev/api/jadwal", {
       hari,
       waktu,
       mataKuliah,

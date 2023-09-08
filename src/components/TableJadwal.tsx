@@ -13,7 +13,7 @@ interface Jadwal {
 
 const TableJadwal: FC = () => {
   const fetcher = async () => {
-    const response = await axios.get<Jadwal[]>("https://pemrograman.vercel.app/api/jadwal");
+    const response = await axios.get<Jadwal[]>("https://pemrograman.pages.dev/api/jadwal");
     return response.data;
   };
 
