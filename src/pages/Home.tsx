@@ -263,28 +263,28 @@ const Home: FC = () => {
                 <table className="min-w-full divide-y divide-gray-200 dark:divide-gray-800">
                   <thead className="bg-sky-200 dark:bg-gray-700">
                     <tr>
-                      <th scope="col" className="px-6 py-3 text-left text-xs text-black uppercase">
+                      <th scope="col" className="px-6 py-3 text-left text-xs text-black dark:text-white uppercase">
                         Hari
                       </th>
-                      <th scope="col" className="px-6 py-3 text-left text-xs text-black uppercase">
+                      <th scope="col" className="px-6 py-3 text-left text-xs text-black dark:text-white uppercase">
                         Waktu
                       </th>
-                      <th scope="col" className="px-6 py-3 text-left text-xs text-black uppercase">
+                      <th scope="col" className="px-6 py-3 text-left text-xs text-black dark:text-white uppercase">
                         Mata Kuliah
                       </th>
-                      <th scope="col" className="px-6 py-3 text-left text-xs text-black uppercase">
+                      <th scope="col" className="px-6 py-3 text-left text-xs text-black dark:text-white uppercase">
                         Jenis Kuliah
                       </th>
-                      <th scope="col" className="px-6 py-3 text-left text-xs text-black uppercase">
+                      <th scope="col" className="px-6 py-3 text-left text-xs text-black dark:text-white uppercase">
                         Ruangan
                       </th>
-                      <th scope="col" className="px-6 py-3 text-left text-xs text-black uppercase">
+                      <th scope="col" className="px-6 py-3 text-left text-xs text-black dark:text-white uppercase">
                         Kelas
                       </th>
-                      <th scope="col" className="px-6 py-3 text-left text-xs text-black uppercase">
+                      <th scope="col" className="px-6 py-3 text-left text-xs text-black dark:text-white uppercase">
                         Nama Dosen
                       </th>
-                      <th scope="col" className="px-6 py-3 text-left text-xs text-black uppercase">
+                      <th scope="col" className="px-6 py-3 text-left text-xs text-black dark:text-white uppercase">
                         Zoom URL
                       </th>
                     </tr>

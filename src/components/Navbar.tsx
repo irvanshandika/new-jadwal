@@ -3,7 +3,7 @@ function Navbar() {
     <header className="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-sky-400 border-b border-gray-200 text-sm py-3 sm:py-0 dark:bg-gray-800 dark:border-gray-700">
       <nav className="relative max-w-7xl w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8" aria-label="Global">
         <div className="flex items-center justify-between">
-          <a className="flex-none lg:text-xl text-base font-semibold uppercase text-white" href="/" aria-label="Brand">
+          <a className="flex-none lg:text-xl text-base font-semibold uppercase text-black dark:text-white" href="/" aria-label="Brand">
             Jadwal Informatika Amikom
           </a>
           <div className="sm:hidden">
@@ -24,13 +24,13 @@ function Navbar() {
         </div>
         <div id="navbar-collapse-with-animation" className="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:block">
           <div className="flex flex-col gap-y-4 gap-x-0 mt-5 sm:flex-row sm:items-center sm:justify-end sm:gap-y-0 sm:gap-x-7 sm:mt-0 sm:pl-7">
-            <a href="/" className="font-medium text-white hover:text-gray-400 sm:py-6 dark:text-gray-400 dark:hover:text-gray-500">
+            <a href="/" className="font-bold text-gray-700 hover:text-gray-400 sm:py-6 dark:text-white dark:hover:text-gray-400">
               Home
             </a>
-            <a className="font-medium text-white hover:text-gray-400 sm:py-6 dark:text-gray-400 dark:hover:text-gray-500" href="/pengganti">
+            <a className="font-bold text-gray-700 hover:text-gray-400 sm:py-6 dark:text-white dark:hover:text-gray-400" href="/pengganti">
               Jadwal Pengganti
             </a>
-            <a className="font-medium text-white hover:text-gray-400 sm:py-6 dark:text-gray-400 dark:hover:text-gray-500" href="/catatan">
+            <a className="font-bold text-gray-700 hover:text-gray-400 sm:py-6 dark:text-white dark:hover:text-gray-400" href="/catatan">
               Catatan
             </a>
           </div>

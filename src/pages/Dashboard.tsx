@@ -38,9 +38,9 @@ const Dashboard: React.FC = () => {
 
   return (
     <>
-      <section className="bg-gray-900 p-3 sm:p-5">
+      <section className="bg-sky-400 dark:bg-gray-900 p-3 sm:p-5">
         <div className="mx-auto max-w-screen-xl px-4 lg:px-12">
-          <div className="bg-gray-800 relative shadow-md sm:rounded-lg overflow-hidden">
+          <div className=" bg-sky-200 dark:bg-gray-800 relative shadow-md sm:rounded-lg overflow-hidden">
             <div className="flex flex-col md:flex-row items-center justify-between space-y-3 md:space-y-0 md:space-x-4 p-4">
               <div className="w-full md:w-auto flex flex-col md:flex-row space-y-2 md:space-y-0 items-stretch md:items-center justify-end md:space-x-3 flex-shrink-0">
                 <a href="/pengganti" className="bg-blue-500 hover:bg-blue-400 text-white rounded-lg px-4 py-2">
@@ -53,7 +53,7 @@ const Dashboard: React.FC = () => {
             </div>
             <div className="overflow-x-auto">
               <table className="w-full text-sm text-left text-gray-400">
-                <thead className="text-xs uppercase bg-gray-700 text-gray-400">
+                <thead className="text-xs uppercase bg-sky-200 dark:bg-gray-700 text-gray-400">
                   <tr>
                     <th scope="col" className="px-4 py-3">
                       Hari

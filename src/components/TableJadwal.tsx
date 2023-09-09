@@ -45,9 +45,9 @@ const TableJadwal: FC = () => {
                   Go To Dashboard
                 </a>
               </div>
-              <div className="border rounded-lg overflow-hidden dark:border-gray-700">
-                <table className="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
-                  <thead className="bg-gray-50 dark:bg-gray-700">
+              <div className="border rounded-lg overflow-hidden border-blue-500 dark:border-gray-700">
+                <table className="min-w-full divide-y divide-blue-500 dark:divide-gray-700">
+                  <thead className="bg-sky-200 dark:bg-gray-700">
                     <tr>
                       <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase dark:text-gray-400">
                         Hari
@@ -75,7 +75,7 @@ const TableJadwal: FC = () => {
                       ))
                     ) : (
                       <tr>
-                        <td colSpan={4} className="px-6 py-4 text-center text-gray-500 dark:text-gray-400 bg-gray-800">
+                        <td colSpan={4} className="px-6 py-4 text-center text-gray-500 dark:text-gray-400 bg-sky-200 dark:bg-gray-800">
                           <div className="grid justify-center mb-4">
                             <div className="inline-flex rounded-full bg-red-100 p-4">
                               <div className="rounded-full stroke-red-600 bg-red-200 p-4">
