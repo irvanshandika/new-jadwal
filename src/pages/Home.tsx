@@ -237,7 +237,7 @@ const Home: FC = () => {
       <div className="flex flex-col">
         <div className="-m-1.5 overflow-x-auto">
           <div className="p-1.5 min-w-full inline-block align-middle">
-            <div className="border rounded-lg divide-y divide-gray-200 dark:border-gray-700 dark:divide-gray-700">
+            <div className="border rounded-lg divide-y divide-blue-400 border-blue-400 dark:border-gray-700 dark:divide-gray-700">
               <div className="py-3 px-4 bg-sky-200 dark:bg-gray-800">
                 <div className="relative max-w-xs">
                   <label htmlFor="hs-table-search" className="sr-only">
@@ -260,7 +260,7 @@ const Home: FC = () => {
                 </div>
               </div>
               <div className="overflow-x-auto relative">
-                <table className="min-w-full divide-y divide-gray-200 dark:divide-gray-800">
+                <table className="min-w-full divide-y divide-blue-400 dark:divide-gray-800">
                   <thead className="bg-sky-200 dark:bg-gray-700">
                     <tr>
                       <th scope="col" className="px-6 py-3 text-left text-xs text-black dark:text-white uppercase">
@@ -289,7 +289,7 @@ const Home: FC = () => {
                       </th>
                     </tr>
                   </thead>
-                  <tbody className="divide-y divide-gray-200 dark:divide-gray-700 bg-sky-200 dark:bg-gray-800">
+                  <tbody className="divide-y divide-blue-400 dark:divide-gray-700 bg-sky-200 dark:bg-gray-800">
                     {filteredJadwal.map((jadwal) => (
                       <tr key={jadwal.IdKuliah}>
                         <td className="px-6 py-4 whitespace-nowrap text-sm text-black dark:text-gray-200">{jadwal.Hari}</td>

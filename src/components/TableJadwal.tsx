@@ -36,7 +36,7 @@ const TableJadwal: FC = () => {
 
   return (
     <>
-      <section className="p-3 sm:p-5">
+      <section className="p-3 sm:p-5 h-screen mt-4">
         <div className="flex flex-col">
           <div className="-m-1.5 overflow-x-auto">
             <div className="p-1.5 min-w-full inline-block align-middle">

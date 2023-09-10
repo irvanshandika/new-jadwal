@@ -21,7 +21,7 @@ const TambahJadwal: React.FC = () => {
   };
 
   return (
-    <div className="max-w-lg mx-auto my-10 bg-white p-8 rounded-xl shadow shadow-slate-300 dark:bg-gray-800 dark:shadow-slate-800">
+    <div className="max-w-lg mx-auto my-10 bg-sky-200 p-8 rounded-xl shadow shadow-slate-300 dark:bg-gray-800 dark:shadow-slate-800">
       <form className="my-10" onSubmit={saveJadwal}>
         <div className="flex flex-col">
           <div className="mb-5">
