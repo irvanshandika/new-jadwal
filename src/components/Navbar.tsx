@@ -1,10 +1,25 @@
+import { Typography, createTheme } from "@mui/material";
+const font = "Google Sans";
+
+const theme = createTheme({
+  typography: {
+    fontFamily: font,
+  },
+});
+
 function Navbar() {
   return (
     <header className="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-sky-400 border-b border-gray-200 text-sm py-3 sm:py-0 dark:bg-gray-800 dark:border-gray-700">
       <nav className="relative max-w-7xl w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8" aria-label="Global">
         <div className="flex items-center justify-between">
           <a className="flex-none lg:text-xl text-base font-semibold uppercase text-black dark:text-white" href="/" aria-label="Brand">
-            Jadwal Informatika Amikom
+            <Typography
+              sx={{
+                fontFamily: font,
+                fontWeight: "bold",
+              }}>
+              Jadwal Semester 5
+            </Typography>
           </a>
           <div className="sm:hidden">
             <button
