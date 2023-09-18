@@ -3,6 +3,12 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import useSWR, { useSWRConfig } from "swr";
 import Loading from "@/components/Loading";
+import { Button } from "@mui/material";
+// Icons
+import ModeEditRoundedIcon from "@mui/icons-material/ModeEditRounded";
+import DeleteForeverRoundedIcon from "@mui/icons-material/DeleteForeverRounded";
+import ArrowBackRoundedIcon from "@mui/icons-material/ArrowBackRounded";
+import AddCircleRoundedIcon from "@mui/icons-material/AddCircleRounded";
 
 interface Jadwal {
   id: number;
@@ -43,11 +49,51 @@ const Dashboard: React.FC = () => {
           <div className=" bg-sky-200 dark:bg-gray-800 relative shadow-md sm:rounded-lg overflow-hidden">
             <div className="flex flex-col md:flex-row items-center justify-between space-y-3 md:space-y-0 md:space-x-4 p-4">
               <div className="w-full md:w-auto flex flex-col md:flex-row space-y-2 md:space-y-0 items-stretch md:items-center justify-end md:space-x-3 flex-shrink-0">
-                <a href="/pengganti" className="bg-blue-500 hover:bg-blue-400 text-white rounded-lg px-4 py-2">
-                  Kembali
+                <a href="/pengganti">
+                  <Button
+                    sx={{
+                      color: "white",
+                      backgroundColor: "primary.light",
+                      "&:hover": {
+                        backgroundColor: "primary.main",
+                      },
+                      borderRadius: "10px",
+                      paddingLeft: "20px",
+                      paddingRight: "20px",
+                      paddingTop: "10px",
+                      paddingBottom: "10px",
+                    }}>
+                    <ArrowBackRoundedIcon
+                      sx={{
+                        width: "20px",
+                        height: "20px",
+                        marginRight: "5px",
+                      }}
+                    />{" "}
+                    Kembali
+                  </Button>
                 </a>
-                <a href="/tambah" className="bg-green-500 hover:bg-green-400 text-white rounded-lg px-4 py-2">
-                  Tambah
+                <a href="/tambah">
+                  <Button
+                    sx={{
+                      color: "white",
+                      backgroundColor: "success.light",
+                      "&:hover": {
+                        backgroundColor: "success.main",
+                      },
+                      borderRadius: "10px",
+                      paddingLeft: "20px",
+                      paddingRight: "20px",
+                      paddingTop: "10px",
+                      paddingBottom: "10px",
+                    }}>
+                    <AddCircleRoundedIcon sx={{
+                      width: "20px",
+                      height: "20px",
+                      marginRight: "5px",
+                    }} />
+                    Tambah
+                  </Button>
                 </a>
               </div>
             </div>
@@ -83,15 +129,17 @@ const Dashboard: React.FC = () => {
                         <td className="px-4 py-3">{jadwal.mataKuliah}</td>
                         <td className="px-4 py-3">{jadwal.ruangan}</td>
                         <td className="px-4 py-3">
-                          <a href={`/edit/${jadwal.id}`} className="mr-2">
-                            <button className="bg-green-400 hover:bg-green-500 text-white text-xs w-16 h-7 font-medium rounded-sm">
-                              <i className="pr-1 fa-solid fa-pen"></i>
-                              Edit
+                          <a href={`/edit/${jadwal.id}`} className="mr-1">
+                            <button className="bg-green-400 hover:bg-green-500 text-white text-xs w-10 h-10 font-medium rounded-full">
+                              <ModeEditRoundedIcon
+                                sx={{
+                                  fontSize: "20px",
+                                }}
+                              />
                             </button>
                           </a>
-                          <button onClick={() => deleteJadwal(jadwal.id)} className="bg-red-400 hover:bg-red-500 text-white text-xs w-16 h-7 font-medium rounded-sm">
-                            <i className="pr-1 fa-solid fa-trash-can"></i>
-                            Delete
+                          <button onClick={() => deleteJadwal(jadwal.id)} className="bg-red-400 hover:bg-red-500 text-white text-xs w-10 h-10 font-medium rounded-full">
+                            <DeleteForeverRoundedIcon />
                           </button>
                         </td>
                       </tr>

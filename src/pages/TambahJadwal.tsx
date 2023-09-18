@@ -1,6 +1,10 @@
 import React, { useState, FormEvent } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import { Button, Grid, Typography } from "@mui/material";
+// Icons
+import SaveAsRoundedIcon from "@mui/icons-material/SaveAsRounded";
+import ArrowBackRoundedIcon from "@mui/icons-material/ArrowBackRounded";
 
 const TambahJadwal: React.FC = () => {
   const [hari, setHari] = useState<string>("");
@@ -25,15 +29,19 @@ const TambahJadwal: React.FC = () => {
       <form className="my-10" onSubmit={saveJadwal}>
         <div className="flex flex-col">
           <div className="mb-5">
-            <label className="font-bold text-slate-700">Hari</label>
+            {/* <label className="font-bold text-slate-700">Hari</label> */}
+            {/* <Typography className="font-bold text-slate-700 dark:text-slate-100">Hari</Typography> */}
             <input type="text" value={hari} onChange={(e) => setHari(e.target.value)} className="w-full py-3 mt-1 border border-slate-200 rounded-lg px-3 focus:outline-none focus:border-slate-500 hover:shadow" placeholder="Hari" />
           </div>
           <div className="mb-5">
-            <label className="font-bold text-slate-700">Waktu</label>
+            {/* <label className="font-bold text-slate-700">Waktu</label> */}
+            <Typography className="font-bold text-slate-700 dark:text-slate-100">Waktu</Typography>
+
             <input type="text" value={waktu} onChange={(e) => setWaktu(e.target.value)} className="w-full py-3 mt-1 border border-slate-200 rounded-lg px-3 focus:outline-none focus:border-slate-500 hover:shadow" placeholder="Waktu" />
           </div>
           <div className="mb-5">
-            <label className="font-bold text-slate-700">Mata Kuliah</label>
+            {/* <label className="font-bold text-slate-700 dark:text-slate-100">Mata Kuliah</label> */}
+            <Typography className="font-bold text-slate-700 dark:text-slate-100">Mata Kuliah</Typography>
             <input
               type="text"
               value={mataKuliah}
@@ -43,17 +51,67 @@ const TambahJadwal: React.FC = () => {
             />
           </div>
           <div className="mb-5">
-            <label className="font-bold text-slate-700">Ruangan</label>
+            {/* <label className="font-bold text-slate-700">Ruangan</label> */}
+            <Typography className="font-bold text-slate-700 dark:text-slate-100">Ruangan</Typography>
             <input type="text" value={ruangan} onChange={(e) => setRuangan(e.target.value)} className="w-full py-3 mt-1 border border-slate-200 rounded-lg px-3 focus:outline-none focus:border-slate-500 hover:shadow" placeholder="Ruangan" />
           </div>
-          <button type="submit" className="bg-blue-400 hover:bg-blue-500 w-full text-black hover:text-white h-10 rounded-lg">
-            Simpan
-          </button>
-          <a href="/dashboard" className="py-4">
-            <button type="button" className="bg-gray-300 hover:bg-gray-500 w-full text-black hover:text-white h-10 rounded-lg">
-              Kembali
-            </button>
-          </a>
+          <Grid
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+            }}>
+            <Button
+              type="submit"
+              sx={{
+                backgroundColor: "primary.light",
+                color: "white",
+                "&:hover": {
+                  backgroundColor: "primary.dark",
+                  color: "white",
+                },
+                width: "100px",
+                height: "40px",
+                borderRadius: "10px",
+                fontSize: "16px",
+                fontWeight: "bold",
+                marginRight: "10px",
+              }}>
+              <SaveAsRoundedIcon
+                sx={{
+                  width: "20px",
+                  height: "20px",
+                  marginRight: "5px",
+                }}
+              />
+              Simpan
+            </Button>
+            <a href="/dashboard">
+              <Button
+                type="button"
+                sx={{
+                  backgroundColor: "warning.light",
+                  color: "white",
+                  "&:hover": {
+                    backgroundColor: "warning.dark",
+                    color: "white",
+                  },
+                  width: "100px",
+                  height: "40px",
+                  borderRadius: "10px",
+                  fontSize: "16px",
+                  fontWeight: "bold",
+                }}>
+                <ArrowBackRoundedIcon
+                  sx={{
+                    width: "20px",
+                    height: "20px",
+                    marginRight: "5px",
+                  }}
+                />
+                Kembali
+              </Button>
+            </a>
+          </Grid>
         </div>
       </form>
     </div>
