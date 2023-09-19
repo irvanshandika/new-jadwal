@@ -1,11 +1,11 @@
-import TableJadwal from "@/components/TableJadwal"
+import TableJadwal from "@/components/TableJadwal";
 
 function JadwalPengganti() {
   return (
     <>
-    <TableJadwal />
+      <TableJadwal />
     </>
-  )
+  );
 }
 
-export default JadwalPengganti
+export default JadwalPengganti;

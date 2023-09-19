@@ -87,11 +87,13 @@ const Dashboard: React.FC = () => {
                       paddingTop: "10px",
                       paddingBottom: "10px",
                     }}>
-                    <AddCircleRoundedIcon sx={{
-                      width: "20px",
-                      height: "20px",
-                      marginRight: "5px",
-                    }} />
+                    <AddCircleRoundedIcon
+                      sx={{
+                        width: "20px",
+                        height: "20px",
+                        marginRight: "5px",
+                      }}
+                    />
                     Tambah
                   </Button>
                 </a>
