@@ -305,7 +305,7 @@ const Home: FC = () => {
                         <td className="px-6 py-4 whitespace-nowrap text-sm text-black dark:text-gray-200">{jadwal.Kelas}</td>
                         <td className="px-6 py-4 whitespace-nowrap text-sm text-black dark:text-gray-200">{jadwal.NamaDosen}</td>
                         <td className="px-6 py-4 whitespace-nowrap text-sm text-black dark:text-gray-200">
-                          <a href={jadwal.ZoomURL}>
+                          <a href={jadwal.ZoomURL} target="_blank">
                             <button
                               data-tooltip-target="tooltip-camera"
                               type="button"
