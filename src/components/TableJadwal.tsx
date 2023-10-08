@@ -57,20 +57,60 @@ const TableJadwal: FC = () => {
                 <Table>
                   <TableHead>
                     <TableRow>
-                      <TableCell>Hari</TableCell>
-                      <TableCell>Waktu</TableCell>
-                      <TableCell>Mata Kuliah</TableCell>
-                      <TableCell>Ruangan</TableCell>
+                      <TableCell
+                        sx={{
+                          textAlign: "center",
+                        }}>
+                        Hari
+                      </TableCell>
+                      <TableCell
+                        sx={{
+                          textAlign: "center",
+                        }}>
+                        Waktu
+                      </TableCell>
+                      <TableCell
+                        sx={{
+                          textAlign: "center",
+                        }}>
+                        Mata Kuliah
+                      </TableCell>
+                      <TableCell
+                        sx={{
+                          textAlign: "center",
+                        }}>
+                        Ruangan
+                      </TableCell>
                     </TableRow>
                   </TableHead>
                   <TableBody>
                     {data && data.length > 0 ? (
                       data.map((jadwal) => (
                         <TableRow key={jadwal.hari + jadwal.waktu}>
-                          <TableCell>{jadwal.hari}</TableCell>
-                          <TableCell>{jadwal.waktu}</TableCell>
-                          <TableCell>{jadwal.mataKuliah}</TableCell>
-                          <TableCell>{jadwal.ruangan}</TableCell>
+                          <TableCell
+                            sx={{
+                              textAlign: "center",
+                            }}>
+                            {jadwal.hari}
+                          </TableCell>
+                          <TableCell
+                            sx={{
+                              textAlign: "center",
+                            }}>
+                            {jadwal.waktu}
+                          </TableCell>
+                          <TableCell
+                            sx={{
+                              textAlign: "center",
+                            }}>
+                            {jadwal.mataKuliah}
+                          </TableCell>
+                          <TableCell
+                            sx={{
+                              textAlign: "center",
+                            }}>
+                            {jadwal.ruangan}
+                          </TableCell>
                         </TableRow>
                       ))
                     ) : (

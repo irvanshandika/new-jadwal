@@ -1,8 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { FC, useState, useEffect } from "react";
 import Loading from "@/components/Loading";
-import InfoIcon from "@mui/icons-material/Info";
-import { Card, CardContent, Typography } from "@mui/material";
 
 const Home: FC = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -263,28 +261,6 @@ const Home: FC = () => {
                     <svg className="h-3.5 w-3.5 text-gray-400" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
                       <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
                     </svg>
-                  </div>
-                </div>
-                {/* Tooltip */}
-                <div className="mt-4">
-                  <div className="hs-tooltip inline-block">
-                    <button
-                      type="button"
-                      className="hs-tooltip-toggle w-10 h-10 inline-flex justify-center items-center gap-2 rounded-full bg-gray-50 border border-gray-200 text-gray-600 hover:bg-blue-50 hover:border-blue-200 hover:text-blue-600 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-white/[.05] dark:hover:border-white/[.1] dark:hover:text-white">
-                      <InfoIcon />
-                      <span
-                        className="hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible opacity-0 transition-opacity inline-block absolute invisible z-10 py-1 px-2 text-xs font-medium text-white rounded-md shadow-sm "
-                        role="tooltip">
-                        <Card
-                          sx={{
-                            backgroundColor: "gray",
-                          }}>
-                          <CardContent>
-                            <Typography>Tooltip</Typography>
-                          </CardContent>
-                        </Card>
-                      </span>
-                    </button>
                   </div>
                 </div>
               </div>

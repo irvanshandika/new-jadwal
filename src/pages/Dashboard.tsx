@@ -103,19 +103,19 @@ const Dashboard: React.FC = () => {
               <table className="w-full text-sm text-left text-gray-400">
                 <thead className="text-xs uppercase bg-sky-200 text-black dark:bg-gray-700 dark:text-gray-400">
                   <tr>
-                    <th scope="col" className="px-4 py-3">
+                    <th scope="col" className="px-4 py-3 text-center">
                       Hari
                     </th>
-                    <th scope="col" className="px-4 py-3">
+                    <th scope="col" className="px-4 py-3 text-center">
                       Waktu
                     </th>
-                    <th scope="col" className="px-4 py-3">
+                    <th scope="col" className="px-4 py-3 text-center">
                       Mata Kuliah
                     </th>
-                    <th scope="col" className="px-4 py-3">
+                    <th scope="col" className="px-4 py-3 text-center">
                       Ruangan
                     </th>
-                    <th scope="col" className="px-4 py-3">
+                    <th scope="col" className="px-4 py-3 text-center">
                       Aksi
                     </th>
                   </tr>
@@ -124,13 +124,13 @@ const Dashboard: React.FC = () => {
                   {data.length > 0 ? (
                     data.map((jadwal) => (
                       <tr className="border-b border-gray-700" key={jadwal.id}>
-                        <th scope="row" className="px-4 py-3 font-medium whitespace-nowrap text-white">
+                        <th scope="row" className="px-4 py-3 text-center font-medium whitespace-nowrap text-white">
                           {jadwal.hari}
                         </th>
-                        <td className="px-4 py-3">{jadwal.waktu}</td>
-                        <td className="px-4 py-3">{jadwal.mataKuliah}</td>
-                        <td className="px-4 py-3">{jadwal.ruangan}</td>
-                        <td className="px-4 py-3">
+                        <td className="px-4 py-3 text-center">{jadwal.waktu}</td>
+                        <td className="px-4 py-3 text-center">{jadwal.mataKuliah}</td>
+                        <td className="px-4 py-3 text-center">{jadwal.ruangan}</td>
+                        <td className="px-4 py-3 text-center">
                           <a href={`/edit/${jadwal.id}`} className="mr-1">
                             <button className="bg-green-400 hover:bg-green-500 text-white text-xs w-10 h-10 font-medium rounded-full">
                               <ModeEditRoundedIcon

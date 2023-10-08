@@ -11,6 +11,7 @@ import JadwalPengganti from "@pages/JadwalPengganti";
 import Dashboard from "@pages/Dashboard";
 import TambahJadwal from "@pages/TambahJadwal";
 import EditJadwal from "@pages/EditJadwal";
+
 // component
 import Navbar from "@components/Navbar";
 import Footer from "@components/Footer";
